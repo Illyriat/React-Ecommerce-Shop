@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Basket from "../Components/Basket";
-import Button from "../Components/Button";
 import ErrorPage from "../Components/ErrorPage";
 import Header from "../Components/Header";
 import Home from "../Components/Home";
@@ -13,12 +12,13 @@ import NavBar from "../Components/NavBar";
 
 const MicrophoneContainer = () => {
     
-    const [user, setUser] = useState({
-        name: "James"
+    const [user] = useState({
+        name: "Teddy"
     });
-    const [items, setItems] = useState([
-        {name: "SM58"},
-        {name: "P5"},
+    const [items] = useState([
+        {name: "Shure SM58"},
+        {name: "AKG P5"},
+        {name: "Audix D6"},
     ]);
     const [basket, setBasket] = useState([]);
 

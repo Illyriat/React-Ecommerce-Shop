@@ -8,23 +8,35 @@ const NavLinks = styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 1.5em;
-`
+    background-color: #333;
+`;
+
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+
+    &:hover {
+        color: lightgray;
+    }
+`;
 
 const NavBar = () => {
     return ( 
         <NavLinks>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/items">All Microphones</Link>
-                </li>
-                <li>
-                    <Link to="/basket">Basket</Link>
-                </li>
-            </ul>
+            <li>
+                <StyledLink to="/">Home</StyledLink>
+            </li>
+            <li>
+                <StyledLink to="/items">Microphones</StyledLink>
+            </li>
+            <li>
+                <StyledLink to="/basket">Basket</StyledLink>
+            </li>
         </NavLinks>
      );
 }

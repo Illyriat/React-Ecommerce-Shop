@@ -14,8 +14,8 @@ const Home = () => {
     return ( 
         <>
             <ImageLinks>
-                <Link to="/items"><img src="microphone.jpeg" alt="microphone" width="200"/></Link>
-                <Link to="/basket"><img src="basket.webp" alt="basket" width="250" /></Link>
+                <Link to="/items"><img src="imgs/microphone.png" alt="microphone" width="100"/></Link>
+                <Link to="/basket"><img src="imgs/basket.png" alt="basket" width="100" /></Link>
             </ImageLinks>
         </>
      );
